@@ -43,7 +43,7 @@ public class MainTest {
         weatherPage.typeCityIntoSearchField("Нью-Йорк");
         CitySearchResultPage citySearchResultPage = weatherPage.search();
         String actualText = citySearchResultPage.getFirstFoundCityText();
-        Assert.assertTrue("Какая-то беда, бро", actualText.contains("Нью-Йорк, Штат Нью-Йорк, США"));
+        Assert.assertTrue("Какая-то беда, brother", actualText.contains("Нью-Йорк, Штат Нью-Йорк, США"));
     }
 
     @AfterClass
